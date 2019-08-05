@@ -63,7 +63,7 @@
                 <fieldset class="govuk-fieldset">
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="keyword">Keyword</label>
-                        <input class="govuk-input" id="keyword" name="keyword" type="text" placeholder="e.g. Job title or other keyword">
+                        <input class="govuk-input" id="keyword" name="keyword" type="text" value="{{ data['keyword'] }}">
                     </div>
                 </fieldset>
             </div>
@@ -74,7 +74,7 @@
                 <fieldset class="govuk-fieldset">
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="location">Location</label>
-                        <input class="govuk-input" id="location" name="location" type="text" placeholder="e.g. City, town or postcode">
+                        <input class="govuk-input" id="location" name="location" type="text" value="{{ data['location'] }}">
                     </div>
                 </fieldset>
             </div>
@@ -379,7 +379,7 @@
                                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--m gem-c-checkboxes__legend--hidden">Working pattern</legend>
                                         <ul class="govuk-checkboxes gem-c-checkboxes__list govuk-checkboxes--small">
                                             <li class="govuk-checkboxes__item">
-                                                <input type="checkbox" name="phase" id="phase-1" value="phase-1" class="govuk-checkboxes__input">
+                                                <input type="checkbox" name="phase" id="phase-1" value="Not applicable" class="govuk-checkboxes__input">
                                                 <label for="phase-1" class="govuk-label govuk-checkboxes__label">Not applicable</label>
                                             </li>
                                             <li class="govuk-checkboxes__item">
@@ -395,19 +395,19 @@
                                                 <label for="phase-4" class="govuk-label govuk-checkboxes__label">Middle deemed primary</label>
                                             </li>
                                             <li class="govuk-checkboxes__item">
-                                                <input type="checkbox" name="phase" id="phase-5" value="phase-5" class="govuk-checkboxes__input">
+                                                <input type="checkbox" name="phase" id="phase-5" value="Secondary" class="govuk-checkboxes__input">
                                                 <label for="phase-5" class="govuk-label govuk-checkboxes__label">Secondary</label>
                                             </li>
                                             <li class="govuk-checkboxes__item">
-                                                <input type="checkbox" name="phase" id="phase-6" value="phase-6" class="govuk-checkboxes__input">
+                                                <input type="checkbox" name="phase" id="phase-6" value="Middle deemed secondary" class="govuk-checkboxes__input">
                                                 <label for="phase-6" class="govuk-label govuk-checkboxes__label">Middle deemed secondary</label>
                                             </li>
                                             <li class="govuk-checkboxes__item">
-                                                <input type="checkbox" name="phase" id="phase-7" value="phase-7" class="govuk-checkboxes__input">
+                                                <input type="checkbox" name="phase" id="phase-7" value="Sixteen plus" class="govuk-checkboxes__input">
                                                 <label for="phase-7" class="govuk-label govuk-checkboxes__label">Sixteen plus</label>
                                             </li>
                                             <li class="govuk-checkboxes__item">
-                                                <input type="checkbox" name="phase" id="phase-8" value="phase-8" class="govuk-checkboxes__input">
+                                                <input type="checkbox" name="phase" id="phase-8" value="All through" class="govuk-checkboxes__input">
                                                 <label for="phase-8" class="govuk-label govuk-checkboxes__label">All through</label>
                                             </li>
                                         </ul>
