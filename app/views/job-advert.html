@@ -2,11 +2,11 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Find a job in Teaching
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back to results</a>
+  <a class="govuk-back-link" href="search-results-2.html">Back to results</a>
 {% endblock %}
 
 {% block content %}
@@ -14,8 +14,8 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <h1 class="govuk-heading-l">
-            School name
-            <span class="govuk-caption-l">Avanti Court Primary School, Barkingside, Essex</span>
+            Teacher of Science
+            <span class="govuk-caption-l">Featherstone High School, {{ data['location'] }}</span>
         </h1>
         <hr class="job-line">
     </div>
@@ -36,21 +36,21 @@
 
         <aside class="vacancy--metadata">
             <div class="cta">
-                <a target="_blank" class="govuk-button" aria-label="Learn more about this role and how to apply for it (link opens external website in a new window)" href="#">Find out how to apply</a>
+                <a target="_blank" class="govuk-button" href="https://www.featherstonehigh.ealing.sch.uk/">Find out how to apply</a>
             </div>
             <dl>
                 <dt>Working pattern</dt>
                 <dd>Part-time only.</dd>
                 <dt>Salary</dt>
                 <dd>
-                    £18,822 to £19,960 per year (full-time equivalent)
+                    £28,653 to £48,244 per year (full-time equivalent)
                 </dd>
                 <dt>Closing date</dt>
-                <dd>29 July 2019</dd>
+                <dd>30 August 2019</dd>
                 <dt>Date posted</dt>
-                <dd>19 July 2019</dd>
+                <dd>17 July 2019</dd>
                 <dt>Job contact email</dt>
-                <dd class="wordwrap"><a class="govuk-link" href="mailto:careers@avanti.org.uk?body=Regarding%20the%20job%20at%20https%3A%2F%2Fteaching-vacancies.service.gov.uk%2Fjobs%2Fpart-time-caretaker&amp;subject=Part%20Time%20Caretaker%20job%20enquiry">careers@avanti.org.uk</a></dd>
+                <dd class="wordwrap"><a class="govuk-link" href="#">careers@avanti.org.uk</a></dd>
             </dl>
         </aside>
 
@@ -59,18 +59,28 @@
     <div class="govuk-grid-column-two-thirds">
 
         <h2 class="govuk-heading-m" id="job-description">Job description</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h2 class="govuk-heading-m">Sub title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h2 class="govuk-heading-m">Sub title</h2>
-        <p class="job-linez">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h2 class="govuk-heading-m" id="about-school">About this schools</h2>
+        <p>We wish to appoint from September 2019 to this 11-19 multi-cultural school specialising in the Sciences and Sport, a highly motivated, ambitious and dynamic teacher to teach Science up to KS4. The candidate applying for the post should be a hardworking professional, committed to thorough lesson planning, enthusiastic delivery and careful assessment.</p>
+        <p>Featherstone High is a friendly school that thrives on teamwork and high achievement in all areas of our work with young people. We value our teachers and actively support their professional development through high quality on-going professional development.</p>
+        <p>Join us and you can expect an exceptional programme of professional studies during your first year as an NQT with the support of a dedicated mentor and an experienced Professional Tutor. We are one of very few schools to achieve the Platinum Award for CPD – a reflection of the importance we attach to supporting the professional development of colleagues.</p>
+        <p>We can also offer you, competitive pay and an excellent pension scheme, family friendly working and a collaborative culture where ideas take flight together. We offer Cycle to Work scheme, free counselling and occupational health service, discounted gym membership and contribution towards eye tests and VDU glasses. If you are looking to extend your experience and would be interested in joining our team, we would be delighted to hear from you.</p>
+        <p>All applicants are welcome to visit the school, application forms and further details are available from the School’s website https://featherstonehigh.careers.eteach.com/#/ . </p>
+        <p>CVs are accepted and approved applicants will be required to fill out an application form on appointment. Please email your completed form or CV to info@featherstonehigh.ealing.sch.uk.</p>
+        <p>Featherstone High School is committed to safeguarding and promoting the welfare of Children and Young People and expects all staff and volunteers to share this commitment. The successful applicants will be required to apply for an Enhanced Disclosure from the Disclosure and Barring Service (DBS) References will need to be seen before any offer of employment is made.</p>
+        <p>The closing date is Friday 30th August 2019, 4pm, however we reserve the right to close the advert early if we appoint sooner.</p>
+
+        <h2 class="govuk-heading-m">Essential educational requirements</h2>
+        <p>Graduate qualification in Science or equivalent</p>
+        <h2 class="govuk-heading-m">Essential qualification</h2>
+        <p>Qualified Teacher Status</p>
+        <h2 class="govuk-heading-m">Essential skills and experience</h2>
+        <p class="job-linez">Have a practical understanding of National Curriculum requirements in terms of content, classroom practice, differentiation, summative and formative assessment and reporting to parents  Experience of teaching Science to G.C.S.E level  Demonstrable experience of improving successful student outcomes in the last three years.</p>
+        <h2 class="govuk-heading-m" id="about-school">About Featherstone High School</h2>
 
         <dl class="school--details ">
             <dt>Address</dt>
-            <dd>Carlton Drive, Barkingside, Essex, IG6 1LZ</dd>
+            <dd>Carlton Drive, {{ data['location'] }}, IG6 1LZ</dd>
             <dt>Phase</dt>
-            <dd>Primary</dd>
+            <dd>Secondary</dd>
             <dt>Type</dt>
             <dd>Academy</dd>
         </dl>

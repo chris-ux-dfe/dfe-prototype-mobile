@@ -1,5 +1,9 @@
 {% extends "template.njk" %}
 
+{% block pageTitle %}
+  Find a job in Teaching
+{% endblock %}
+
 {% block headIcons %}
   <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
   <link rel="mask-icon" href="{{ asset_path }}images/gov.uk_logotype_crown.svg?0.18.3" color="#0b0c0c">
@@ -109,7 +113,7 @@
                                                 <label for="radius-1" class="govuk-label govuk-radios__label">Within 1 mile</label>
                                             </li>
                                             <li class="govuk-radios__item">
-                                                <input type="radio" name="location-radius" id="radius-5" value="radius-5" class="govuk-radios__input">
+                                                <input type="radio" name="location-radius" id="radius-5" value="radius-5" class="govuk-radios__input" checked>
                                                 <label for="radius-5" class="govuk-label govuk-radios__label">Within 5 miles</label>
                                             </li>
                                             <li class="govuk-radios__item">
