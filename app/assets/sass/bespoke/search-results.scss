@@ -1,0 +1,228 @@
+
+/*
+---------- Results top ------------------------------
+*/
+
+.results-top {
+    overflow: auto;
+
+    hr {
+        border: solid #000 3px;
+        margin-bottom: 20px;
+    }
+}
+h4.results-amount {
+    font-weight: normal;
+    margin-bottom: 20px;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+p.page-amount {
+    float: left;
+    font-size: 24px;
+    margin-top: 5px;
+
+    span {
+        font-weight: bold;
+    }
+}
+@media (max-width: 40.0625em) {
+    p.page-amount {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    .results-top {
+        margin-bottom: 20px;
+    }
+}
+
+div.results-top div.govuk-form-group {
+    float: right;
+    margin-bottom: 0;
+}
+
+.sort-label {
+
+    padding-right: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/*
+---------- Vacancy results list ------------------------------
+*/
+
+ul.vacancies {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        border-bottom: 1px solid #dee0e2;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+
+
+        div.actions {
+            display: flex;
+            flex-direction: row;
+            -webkit-align-items: center;
+            align-items: center;
+            font-family: "nta", Arial, sans-serif;
+            text-align: center;
+
+            .option-days {
+                border: 2px solid #28A197;
+                background-color: rgba(40, 161, 151, 0.1);
+                margin-right: 10px;
+            }
+
+            .option-save {
+                border: none;
+                display: flex;
+                flex-direction: row;
+                -webkit-align-items: center;
+                align-items: center;
+
+                svg {
+                    margin-right: 5px;
+                }
+
+                a {
+                    font-size: 19px;
+                }
+            }
+
+            .update-tag {
+                padding: 5px;
+            }
+        }
+        @media (max-width: 40.0625em) {
+            div.actions {
+
+                .option-days {
+                    margin-right: 0;
+                }
+
+                .option-save {
+                    justify-content: center;
+                }
+
+                .update-tag {
+                    width: 46%;
+
+                    padding: 5px;
+                }
+            }
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin-bottom:15px;
+        }
+        dl {
+            font-family: "nta", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.25;
+            font-weight: 400;
+
+            dt {
+                width: 24%;
+                display: inline-block;
+                vertical-align: top;
+                padding-bottom: 5px;
+                color: #6f777b;
+            }
+
+            dd.double {
+                width: 60%;
+                display: inline-block;
+                vertical-align: top;
+                padding-bottom: 5px;
+            }
+
+        }
+    }
+}
+
+/*
+---------- Results list pagination ------------------------------
+*/
+
+.gem-c-pagination {
+    display: block;
+    margin: 15px -15px 30px -15px;
+
+    .gem-c-pagination__list {
+        margin: 0;
+        padding: 0;
+
+        .gem-c-pagination__item {
+            font-family: "nta", Arial, sans-serif;
+            font-weight: 400;
+            list-style: none;
+
+            .gem-c-pagination__link {
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+
+                &:hover {
+                    color: #005ea5;
+                }
+                &:active {
+                    color: #005ea5;
+                }
+                &:visited {
+                    color: #005ea5;
+                }
+                &:focus {
+                    color: #005ea5;
+                }
+
+                .gem-c-pagination__link-title {
+                    display: block;
+
+                    .gem-c-pagination__link-icon {
+                        display: inline-block;
+                        margin-bottom: 1px;
+                        height: .482em;
+                        width: .63em;
+                        font-weight: 400;
+                    }
+                    .gem-c-pagination__link-text {
+                        margin-left: 10px;
+                        font-weight: 700;
+                    }
+                    .gem-c-pagination__link-divider {
+                        position: absolute !important;
+                        width: 1px !important;
+                        height: 1px !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        overflow: hidden !important;
+                        clip: rect(0 0 0 0) !important;
+                        -webkit-clip-path: inset(50%) !important;
+                        clip-path: inset(50%) !important;
+                        border: 0 !important;
+                        white-space: nowrap !important;
+                    }
+                    .gem-c-pagination__link-label {
+                        display: inline-block;
+                        margin-top: .1em;
+                        text-decoration: underline;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Education and learning</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Schools and curriculum</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+            Find a job in teaching
+            <!-- <span class="govuk-caption-xl">{{releaseVersion}}</span> -->
+        </h1>
+        <p>Search for teaching jobs in publicly funded schools in England.</p>
+        <p>You can search by:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+            <li>role or subject (‘keyword’)</li>
+            <li>location</li>
+            <li>salary range</li>
+            <li>full-time and part-time jobs (‘working pattern’)</li>
+            <li>primary education and secondary education (‘education phase’)</li>
+        </ul>
+
+        <a href="service-start.html" role="button" draggable="false" class="govuk-button govuk-button--start" >Start now</a>
+
+        <h2 class="govuk-heading-m">Explore the topic</h2>
+
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="#">Schools and curriculum</a></li>
+        </ul>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+        <aside class="app-related-items" role="complementary">
+            <h2 class="govuk-heading-m" id="subsection-title">Related content</h2>
+            <nav role="navigation" aria-labelledby="subsection-title">
+                <ul class="govuk-list govuk-!-font-size-16">
+                    <li><a href="#">Find and compare schools in England</a></li>
+                    <li><a href="#">Types of school</a></li>
+                    <li><a href="#" class="govuk-!-font-weight-bold">More <span class="govuk-visually-hidden">in Subsection</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+    </div>
+
+</div>
+
+{% endblock %}

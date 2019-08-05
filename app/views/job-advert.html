@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back to results</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-l">
+            School name
+            <span class="govuk-caption-l">Avanti Court Primary School, Barkingside, Essex</span>
+        </h1>
+        <hr class="job-line">
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+
+        <div class="mobile-contents mobile-show">
+            <h3 class="govuk-heading-s" id="contents">Contents</h3>
+            <ol>
+                <li><a href="#job-description">Job description</a></li>
+                <li><a href="#about-school">About [School name]</a></li>
+                <li><a href="#share-job">Share job</a></li>
+            </ol>
+        </div>
+
+        <aside class="vacancy--metadata">
+            <div class="cta">
+                <a target="_blank" class="govuk-button" aria-label="Learn more about this role and how to apply for it (link opens external website in a new window)" href="#">Find out how to apply</a>
+            </div>
+            <dl>
+                <dt>Working pattern</dt>
+                <dd>Part-time only.</dd>
+                <dt>Salary</dt>
+                <dd>
+                    £18,822 to £19,960 per year (full-time equivalent)
+                </dd>
+                <dt>Closing date</dt>
+                <dd>29 July 2019</dd>
+                <dt>Date posted</dt>
+                <dd>19 July 2019</dd>
+                <dt>Job contact email</dt>
+                <dd class="wordwrap"><a class="govuk-link" href="mailto:careers@avanti.org.uk?body=Regarding%20the%20job%20at%20https%3A%2F%2Fteaching-vacancies.service.gov.uk%2Fjobs%2Fpart-time-caretaker&amp;subject=Part%20Time%20Caretaker%20job%20enquiry">careers@avanti.org.uk</a></dd>
+            </dl>
+        </aside>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-m" id="job-description">Job description</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="govuk-heading-m">Sub title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="govuk-heading-m">Sub title</h2>
+        <p class="job-linez">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="govuk-heading-m" id="about-school">About this schools</h2>
+
+        <dl class="school--details ">
+            <dt>Address</dt>
+            <dd>Carlton Drive, Barkingside, Essex, IG6 1LZ</dd>
+            <dt>Phase</dt>
+            <dd>Primary</dd>
+            <dt>Type</dt>
+            <dd>Academy</dd>
+        </dl>
+        <div class="job-linez">
+            <img src="/public/images/map.png" alt="">
+        </div>
+
+        <!-- SOCIAL start -->
+        <h2 class="govuk-heading-m" id="share-job">Share this job</h2>
+        <ul class="petition-share govuk-!-margin-bottom-9">
+            <li>
+                <a href="#">Facebook</a>
+            </li>
+            <li>
+                <a href="">Email</a>
+            </li>
+            <li>
+                <a href="">Twitter</a>
+            </li>
+            <li class="petition-share-whatsapp">
+                <a href="">Whatsapp</a>
+            </li>
+        </ul>
+        <!-- SOCIAL end -->
+
+        <div class="mobile-show">
+            <a class="back-to-top" href="#contents">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+                    <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+                </svg>Back to top
+            </a>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+{% endblock %}

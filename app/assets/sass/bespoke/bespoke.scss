@@ -1,0 +1,111 @@
+
+/*
+---------- Hide for mobile hacks ------------------------------
+*/
+
+/*
+Job advert - contents list
+*/
+
+.visually-hidden {
+    position: absolute;
+    left: -9999em;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.mobile-hide { display: none; }
+.mobile-show { display: none;}
+
+@media (max-width: 40.0625em) {
+    .mobile-show { display: block;}
+
+}
+@media (min-width: 40.0625em) {
+    .mobile-hide { display: block; }
+}
+
+/* (max-width: 600px) = change when window is 600px wide or less (Mobile)
+/* (min-width: 600px) = change when window is 600px wide or more (Desktop)
+
+/*
+---------- Service-start ------------------------------
+*/
+
+form.start-search {
+    background-color: $govuk-link-colour;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 20px;
+
+    h1 { color: #FFF; }
+    .label-blue { color: #FFF; }
+    div.start-show-more {margin-bottom: 20px;}
+    a#toggle { color: #FFF; margin-bottom: 20px;}
+    a#toggle:focus { color: #000; }
+}
+
+div#expand {
+    display: none;
+}
+
+h2.quick-title { margin-bottom: 20px;}
+
+ul.quick-search {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    list-style-type: none;
+
+    li {
+        border: 1px #b1b4b6 dashed;
+        margin-bottom: 30px;
+
+        a {
+            display: block;
+            padding: 10px;
+
+            span {font-weight: bold;}
+        }
+    }
+}
+
+@media (max-width: 40.0625em) {
+
+    ul.quick-search {
+
+        li {
+            margin-bottom: 15px;
+
+            a {
+                padding: 15px;
+            }
+        }
+    }
+
+}
+
+/*
+---------- MISC ------------------------------
+*/
+
+.test-class {
+    padding: 10px;
+    background-color: $govuk-focus-colour;
+    margin-bottom: 20px;
+
+    a#toggle {
+        margin-bottom: 10px;
+        display: block;
+    }
+    p#expand {
+        background-color: red;
+        display: none;
+    }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
