@@ -55,8 +55,18 @@ aside.vacancy--metadata {
             padding: 10px 10px 10px 10px;
             background-color: #dee0e2;
         }
+
+        .date-hide-mobile {
+            display: none;
+        }
+
+        .timeline {
+            display: block;
+        }
     }
 }
+
+
 
 /*
 ---------- Mobile contents list ------------------------------
@@ -138,4 +148,121 @@ img {
     svg {
         margin-right: 5px;
     }
+}
+
+/*
+---------- Progress ------------------------------
+*/
+
+.timeline {
+    display: none;
+    border-color: #dee0e2;
+    border-style: solid ;
+    border-width: 0px 15px 15px 15px;
+    padding: 15px;
+
+    h4 {
+        text-align: center;
+        margin: 0 0 5px 0;
+        font-size: 14px;
+    }
+}
+
+.hmcts-progress-bar__list {
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: justify;
+    vertical-align: top;
+
+    .hmcts-progress-bar__list-item {
+        font-family: "nta", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;
+        display: inline-block;
+        // max-width: 20%;
+        max-width: 50%;
+        position: relative;
+        text-align: center;
+        vertical-align: top;
+
+        .hmcts-progress-bar__icon--complete {
+            background-color: #006435;
+            // background-image: url(/hmcts-assets/images/icon-progress-tick.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .hmcts-progress-bar__icon {
+            position: relative;
+            background-color: #ffffff;
+            border: 6px solid #006435;
+            border-radius: 50%;
+            box-sizing: border-box;
+            display: block;
+            height: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25px;
+        }
+
+        .hmcts-progress-bar__label {
+            font-family: "nta", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.14286;
+            display: block;
+            font-weight: inherit;
+            margin-top: 10px;
+            position: relative;
+            word-wrap: break-word;
+        }
+    }
+}
+
+.hmcts-progress-bar__list::before {
+    border-top: 6px solid #006435;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+.hmcts-progress-bar__list::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.hmcts-progress-bar__list-item:first-child::before,
+.hmcts-progress-bar__list-item:last-child::before {
+    border-top: 6px solid #ffffff;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50%;
+}
+.hmcts-progress-bar__list-item:first-child::before,
+.hmcts-progress-bar__list-item:last-child::before {
+    border-top: 6px solid #ffffff;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50%;
+}
+.hmcts-progress-bar__list-item:first-child::before {
+    left: 0;
+}
+.hmcts-progress-bar__list-item:last-child::before {
+    left: auto;
+    right: 0;
 }

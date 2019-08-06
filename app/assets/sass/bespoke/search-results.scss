@@ -81,6 +81,12 @@ ul.vacancies {
                 margin-right: 10px;
             }
 
+            .option-close {
+                border: 2px solid #DF3034;
+                background-color: rgba(223, 48, 52, 0.1);
+                margin-right: 10px;
+            }
+
             .option-save {
                 border: none;
                 display: flex;
@@ -97,6 +103,8 @@ ul.vacancies {
                 }
             }
 
+
+
             .update-tag {
                 padding: 5px;
             }
@@ -108,7 +116,15 @@ ul.vacancies {
                     margin-right: 0;
                 }
 
+                .option-close {
+                    margin-right: 0;
+                }
+
                 .option-save {
+                    justify-content: left;
+                }
+
+                .option-save-couple {
                     justify-content: center;
                 }
 
