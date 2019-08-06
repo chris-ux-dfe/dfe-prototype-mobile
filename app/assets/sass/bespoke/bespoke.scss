@@ -58,14 +58,27 @@ ul.quick-search {
     list-style-type: none;
 
     li {
-        border: 1px #b1b4b6 dashed;
+        border: 1px #dee0e2 dashed;
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch; // makes span + a 100% height
+        height: 100%;
+        padding: 0;
+
+
+        span {
+            font-family: "nta", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 700;
+            padding: 15px;
+            background-color: #dee0e2;
+            text-align: center;
+            width: 6%;
+        }
 
         a {
-            display: block;
-            padding: 10px;
-
-            span {font-weight: bold;}
+            padding: 15px;
         }
     }
 }
@@ -78,7 +91,7 @@ ul.quick-search {
             margin-bottom: 15px;
 
             a {
-                padding: 15px;
+
             }
         }
     }
