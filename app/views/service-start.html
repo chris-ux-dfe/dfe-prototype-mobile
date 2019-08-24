@@ -21,19 +21,44 @@
     <div class="govuk-grid-column-two-thirds">
 
         <form class="start-search">
+
             <fieldset class="govuk-fieldset">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h1 class="govuk-fieldset__heading">Search teaching vacancies</h1>
+                    <h1 class="govuk-fieldset__heading">Find a teaching job</h1>
                 </legend>
+                <p>This is a search in England for all teaching jobs. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
 
                 <div class="govuk-form-group">
                     <label class="govuk-label label-blue" for="keyword">Keyword</label>
-                    <input class="govuk-input" id="keyword" name="keyword" type="text" placeholder="Job title or any other keyword">
+                    <input class="govuk-input" id="keyword" name="keyword" type="text" placeholder="e.g. Job title or any other keyword">
                 </div>
 
+                <!-- Location no radius
                 <div class="govuk-form-group">
                     <label class="govuk-label label-blue" for="location">Location</label>
-                    <input class="govuk-input" id="location" name="location" type="text" placeholder="e.g. City, town or postcode">
+                    <input class="govuk-input govuk-!-width-two-thirds" id="location" name="location" type="text" placeholder="e.g. City, town or postcode">
+                </div>
+                -->
+
+                <div class="govuk-form-group">
+                    <div class="govuk-date-input__item input-location">
+                        <label class="govuk-label label-blue" for="location">Location</label>
+                        <input class="govuk-input" id="location" name="location" type="text" placeholder="e.g. City, town or postcode">
+                    </div>
+                    <div class="govuk-date-input__item input-radius">
+                        <label class="govuk-label label-blue" for="radius">
+                            Within a radius of
+                        </label>
+                        <select id="radius" class="form-control" name="radius">
+                            <option value="1">1 mile</option>
+                            <option value="3">3 miles</option>
+                            <option value="5" selected="">5 miles</option>
+                            <option value="10">10 miles</option>
+                            <option value="15">15 miles</option>
+                            <option value="20">20 miles</option>
+                            <option value="25">25 miles</option>
+                        </select>
+                    </div>
                 </div>
 
                 <!-- START More filters-->
@@ -172,26 +197,41 @@
             </fieldset>
         </form>
 
+        <!--
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">
-                <h3 class="govuk-heading-l quick-title">Quick search by education phase</h3>
+                <h3 class="govuk-heading-l quick-title">Quick searches</h3>
             </div>
             <div class="govuk-grid-column-one-half">
-                <ul class="quick-search">
-                    <li><span>0</span><a href="search-results.html">jobs in Nursery schools</a></li>
-                    <li><span>46</span><a href="javascript:void(0);">jobs in Primary schools</a></li>
-                    <li><span>0</span><a href="javascript:void(0);">jobs in Middle deemed primary schools</a></li>
-                    <li><span>66</span><a href="javascript:void(0);">jobs in Secondary schools</a></li>
+                <h4 class="quick-col-title">Job titles</h4>
+                <ul class="quick-search-alt">
+                    <li><span>0</span><a href="javascript:void(0);"> Teaching</a></li>
+                    <li><span>4</span><a href="javascript:void(0);"> Leadership role</a></li>
+                    <li><span>0</span><a href="javascript:void(0);"> Non-teaching and support</a></li>
+                </ul>
+                <h4 class="quick-col-title">Newly qualified teachers</h4>
+                <ul class="quick-search-alt">
+                    <li><span>0</span><a href="javascript:void(0);"> Suitable for NQT's</a></li>
                 </ul>
             </div>
             <div class="govuk-grid-column-one-half">
-                <ul class="quick-search">
-                    <li><span>0</span><a href="javascript:void(0);">jobs in Middle deemed secondary schools</a></li>
-                    <li><span>4</span><a href="javascript:void(0);">jobs in Sixteen plus schools</a></li>
-                    <li><span>0</span><a href="javascript:void(0);">jobs in All through</a></li>
+                <h4 class="quick-col-title">Jobs by subject</h4>
+                <ul class="quick-search-alt">
+                    <li><span>0</span><a href="javascript:void(0);"> Art & Design</a></li>
+                    <li><span>4</span><a href="javascript:void(0);"> Biology</a></li>
+                    <li><span>0</span><a href="javascript:void(0);"> Business studies</a></li>
+                    <li><span>0</span><a href="javascript:void(0);"> English</a></li>
+                    <li><span>4</span><a href="javascript:void(0);"> History</a></li>
+                    <li><span>0</span><a href="javascript:void(0);"> Information technology (IT)</a></li>
+                    <li><span>0</span><a href="javascript:void(0);"> Maths</a></li>
+                    <li><span>4</span><a href="javascript:void(0);"> Physical education</a></li>
+                    <li><span>0</span><a href="javascript:void(0);"> Physics</a></li>
+                    <li><span>0</span><a href="javascript:void(0);"> Science</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="quick-more">+ view more subjects</a>
             </div>
         </div>
+        -->
 
     </div>
 
@@ -200,8 +240,8 @@
         <aside class="app-related-items" role="complementary">
             <h2 class="govuk-heading-m" id="subsection-title">List a teaching job</h2>
             <p>To list a job for your school, you must have an account to sign into this service.</p>
-            <p>You can get one if you work at a publicly funded school or trust providing primary or secondary education in England and have been authorised by your headteacher or CEO. Just ask them to send your full name and email address to <a href="#">teaching.vacancies@education.gov.uk</a>. Or email us your details directly, copying in your headteacher or CEO.</p>
             <button type="submit" class="govuk-button">Sign in</button>
+            <p>or find out how to <a href="#">register your school</a>.</p>
         </aside>
 
     </div>
